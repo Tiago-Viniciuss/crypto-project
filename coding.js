@@ -51,3 +51,51 @@ function showAnswer2() {
 
     question2.classList.toggle('answer');
 }
+
+function showAnswer3() {
+    let question3 = document.getElementById('question3');
+
+    question3.classList.toggle('answer');
+}
+
+
+var baseUrl = "https://api.coinranking.com/v2/coins";
+var proxyUrl = "https://cors-anywhere.herokuapp.com/";
+var apiKey = "coinranking6dad2fc1e431ec2173e4d059f2a9ab8500a56968b4d15fa9";
+
+var apiUrl = `${proxyUrl}${baseUrl}`;
+console.log(apiUrl);
+
+fetch(`${proxyUrl}${baseUrl}`, { 
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-My-Custom-Header': `${apiKey}`,
+      'Access-Control-Allow-Origin': "*"
+    }
+})
+  .then((response) => {
+    if (response.ok) {
+      response.json().then((json) => {
+        console.log(json.data);
+        let coinsData = json.data.coins;
+
+        if (coinsData.length > 0) {
+          var cryptoCoin = "";
+        }
+        //For Loop Starts
+        coinsData.forEach((coin) => {
+          cryptoCoin += "<tr>";
+          
+          cryptoCoin += `<td> ${coin.name}</td>`;
+          cryptoCoin += `<td> $${Math.round(coin.price)} Billion</td>`;
+          cryptoCoin += `<td> ${coin.symbol}</td>`;"<tr>";
+        });
+        //For Loop Ends
+        document.getElementById("data").innerHTML = cryptoCoin;
+      });
+    }
+  })
+  .catch((error) => {
+    console.log(error);
+  });

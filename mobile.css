@@ -93,6 +93,8 @@ main >  h2 {
 
 #phonePicture {
     height: 400px;
+    width: 250px;
+    margin: auto;
     background-image: url(images/phone.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -168,6 +170,26 @@ main >  h2 {
 }
 
 
+table {
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+table th {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+    padding-left: 5px;  
+    padding-bottom: 10px; 
+}
+
 #questions {
     margin: 15px;
 }
@@ -178,6 +200,7 @@ main >  h2 {
     padding: 5px;
     border-radius: 5px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .answerBackground {
@@ -200,7 +223,7 @@ main >  h2 {
 
 #question1.answer {
     visibility: visible;
-    height: 320px;
+    height: 420px;
 }
 
 #question2 {
@@ -219,7 +242,7 @@ main >  h2 {
 
 #question2.answer {
     visibility: visible;
-    height: 420px;
+    height: 620px;
 }
 
 #question3 {
@@ -233,14 +256,14 @@ main >  h2 {
 
 #question3.answer {
     visibility: visible;
-    height: 420px;
+    height: 320px;
 }
 
 
 footer {
     background-color: rgb(41, 39, 39);
     width: 90%;
-    height: 300px;
+    height: 150px;
     text-align: center;
     padding: 25px;
 }

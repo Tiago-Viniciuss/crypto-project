@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Crypto Hero</title>
+    <title>CryptoNita</title>
 </head>
 <body>
     <header>
         <h1>
-            Crypto Hero <sup>®</sup>
+            CryptoNita <sup>®</sup>
         </h1>
         <button id="menuButton" class="material-symbols-outlined" onclick="openMenu()">menu</button>
         <nav id="menu">
@@ -26,7 +26,7 @@
                     Learn
                 </li>
                 <li>
-                    Be a Hero!
+                    About Us
                 </li>
                 <li>
                     Download App
@@ -56,8 +56,24 @@
     <div id="video">
         <h1>Buy crypto <br> easily and quickly</h1>
         <video src="images/bitcoinvideo.mp4" width="100%" height="100%" autoplay muted loop></video>
-        
     </div>
+
+    <aside>
+        
+
+        <table>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+              </tr>
+            <tbody id="data">
+            </tbody>
+        </table>
+    </aside>
+    <!--
+        Code 
+    -->
     <div id="questions">
         <hr color="white" width="98%">
         <p onclick="showAnswer()"  class="questions">+ What is Cryptocurrency?</p>
@@ -82,9 +98,12 @@
             </p>
         </div>
         <hr color="white" width="98%">
-        <p onclick="showAnswer3()" class="questions">+ How to be a Crypto Hero?</p>
+        <p onclick="showAnswer3()" class="questions">+ Is Cryptocurrency safe?</p>
         <div id="question3">
             <p class="answerBackground">
+                It's crucial for users to adopt good security practices, such as using secure wallets, enabling two-factor authentication, keeping software up to date, and being cautious of phishing attempts. By following these practices and staying informed about the latest security developments, users can enhance the safety of their cryptocurrency holdings.
+
+                Ultimately, while cryptocurrencies offer unique security features, the responsibility for ensuring safety lies with the users and their security practices.
             </p>
         </div>
         <hr color="white" width="98%">
