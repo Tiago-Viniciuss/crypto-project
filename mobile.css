@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: thistle;
+}
+
+header {
+    background-color: rgb(41, 39, 39);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 55;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+#menuButton {
+    z-index: 60;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    color: white;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+}
+
+#menu {
+    background-color: rgb(91, 63, 111);
+    visibility: hidden;
+    width: 100%;
+    height: 0px;
+    overflow-y: hidden;
+    transition: 1s;
+    position: fixed;
+    z-index: 52;
+}
+
+#menu > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#menu > ul > li {
+    list-style: none;
+    font-size: 1.1em;
+    margin: 15px;
+    color: white;
+}
+
+#menu.active {
+    visibility: visible;
+    height: 50%;
+}
+
+#menuComplement {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(182, 112, 198);
+    width: 100%;
+    height: 0px;
+    transition: .5s;
+    overflow-y: hidden;
+    visibility: hidden;
+    z-index: 51;
+}
+
+
+#menuComplement.active {
+    visibility: visible;
+    height: 50%;
+}
+
+main {
+    background-color: thistle;
+    margin-top: 80px;
+}
+
+main >  h2 {
+    text-align: center;
+}
+
+#phonePicture {
+    height: 400px;
+    background-image: url(images/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.popup {
+    position: absolute;
+    border: 1px solid purple;
+    border-radius: 15px;
+    visibility: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.729);
+}
+
+.popup > p {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+#popup1 {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    top: 0px;
+    left: 15px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+#popup1.show {
+    visibility: visible;
+    top: 210px;
+}
+
+#popup2 {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    top: 320px;
+    right: 0px;
+    transition: .5s;
+}
+
+#popup2.show {
+    visibility: visible;
+    right: 35px;
+}
+
+#popup3 {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    bottom: 0px;
+    left: 50px;
+    transition: 1s;
+}
+
+#popup3.show {
+    visibility: visible;
+    bottom: 100px;
+}
+
+.closePopup {
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+}
+
+#video > h1 {
+    text-align: center;
+}
+
+#cryptoVideo {
+    width: 100%;
+    height: 100%;
+}
