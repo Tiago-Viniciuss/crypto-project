@@ -54,6 +54,7 @@ header > h1 {
 #menu > ul > li {
     list-style: none;
     font-size: 1.1em;
+    font-weight: bold;
     margin: 15px;
     color: white;
 }
@@ -174,7 +175,6 @@ main >  h2 {
 .questions {
     font-size: 1.2em;
     font-weight: bolder;
-    background-color: white;
     padding: 5px;
     border-radius: 5px;
     margin: 10px;
@@ -182,7 +182,7 @@ main >  h2 {
 
 .answerBackground {
     padding: 10px;
-    background-color: white;
+   
 }
 
 #question1 {
@@ -234,4 +234,21 @@ main >  h2 {
 #question3.answer {
     visibility: visible;
     height: 420px;
+}
+
+
+footer {
+    background-color: rgb(41, 39, 39);
+    width: 90%;
+    height: 300px;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
 }
