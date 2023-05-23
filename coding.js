@@ -40,3 +40,14 @@ function closePopup3() {
     popup3.classList.remove('show')
 };
 
+function showAnswer() {
+    let question1 = document.getElementById('question1');
+
+    question1.classList.toggle('answer');
+}
+
+function showAnswer2() {
+    let question2 = document.getElementById('question2');
+
+    question2.classList.toggle('answer');
+}

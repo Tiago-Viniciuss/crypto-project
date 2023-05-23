@@ -166,3 +166,72 @@ main >  h2 {
     text-align: center;
 }
 
+
+#questions {
+    margin: 15px;
+}
+
+.questions {
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.answerBackground {
+    padding: 10px;
+    background-color: white;
+}
+
+#question1 {
+    visibility: hidden;
+    transition: .5s;
+    overflow-y: hidden;
+    width: 100%;
+    height: 0px;
+}
+
+#question1 p {
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px;
+}
+
+#question1.answer {
+    visibility: visible;
+    height: 320px;
+}
+
+#question2 {
+    visibility: hidden;
+    transition: .5s;
+    overflow-y: hidden;
+    width: 100%;
+    height: 0px;
+    margin: 5px;
+}
+
+#question2 p {
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px;
+}
+
+#question2.answer {
+    visibility: visible;
+    height: 420px;
+}
+
+#question3 {
+    visibility: hidden;
+    transition: .5s;
+    overflow-y: hidden;
+    width: 100%;
+    height: 0px;
+    margin: 5px;
+}
+
+#question3.answer {
+    visibility: visible;
+    height: 420px;
+}
