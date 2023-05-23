@@ -147,13 +147,13 @@ main >  h2 {
     height: 80px;
     background-color: white;
     bottom: 0px;
-    left: 0px;
+    left: 25px;
     transition: 1s;
 }
 
 #popup3.show {
     visibility: visible;
-    bottom: 140px;
+    bottom: 170px;
 }
 
 .closePopup {
